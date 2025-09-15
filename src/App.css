@@ -1,0 +1,16 @@
+body { font-family: Arial; background: #f4f4f4; margin: 0; }
+.app-container {display: flex; flex-direction: column; justify-content: center;  max-width: 1200px; margin: auto; padding: 20px; }
+.filters-container { display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 20px; }
+.categories button { padding: 5px 10px; }
+.categories .active { background-color: #ff9800; color: white; }
+.dish-list { display: flex; flex-wrap: wrap; gap: 15px; }
+.dish-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 250px; }
+.dish-card img { width: 100%; border-radius: 8px; }
+.modal-overlay { position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; }
+.modal-content { background:white; padding:20px; border-radius:8px; width:400px; }
+
+.app-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}

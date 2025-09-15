@@ -1,0 +1,102 @@
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;                /* take full row */
+  min-height: 100px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 500px;
+  
+}
+
+.dish-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dish-details-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-type-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff; /* mimic standard veg/non-veg icons */
+  border-radius: 3px;
+  padding: 2px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.dish-desc {
+  font-size: 0.9em;
+  color: #555;
+  margin: 6px 0;
+}
+
+.dish-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.ingredients-btn {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f39c12;
+  color: white;
+  font-size: 0.85em;
+}
+
+.ingredients-btn:hover {
+  opacity: 0.9;
+}
+
+.dish-image-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+}
+
+.dish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.add-btn {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  font-size: 0.85em;
+}
+
+.add-btn.selected-btn {
+  background: #27ae60;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+

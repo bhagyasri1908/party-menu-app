@@ -1,0 +1,109 @@
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category-tabs button {
+  padding: 8px 14px;
+  border: 1px solid #1976d2;
+  background: #fff;
+  color: #FF941A;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-tabs button.active-tab,
+.category-tabs button:hover {
+  background: #FF941A;
+  color: #fff;
+}
+
+.veg-nonveg-toggle {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Veg slider */
+.switch input:checked + .veg-slider {
+  background: #27ae60;
+}
+.switch input:checked + .veg-slider::before {
+  transform: translateX(20px);
+}
+
+/* Non-Veg slider */
+.switch input:checked + .nonveg-slider {
+  background: #e74c3c;
+}
+.switch input:checked + .nonveg-slider::before {
+  transform: translateX(20px);
+}
+
+.label-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.selected-count {
+  font-weight: bold;
+  background: #f1f1f1;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
